@@ -1,6 +1,6 @@
-package: github.com/Masterminds/structable
+package: github.com/jackson198608/structable
 import:
-  - package: github.com/Masterminds/squirrel
+  - package: github.com/jackson198608/squirrel
   #- package: github.com/lann/builder
   #- package: github.com/lann/ps
   - package: github.com/lib/pq

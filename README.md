@@ -5,7 +5,7 @@ release, use version 3.1.0.
 
 This library provides basic struct-to-table mapping for Go.
 
-It is based on the [Squirrel](https://github.com/Masterminds/squirrel) library.
+It is based on the [Squirrel](https://github.com/jackson198608/squirrel) library.
 
 ## What It Does
 
@@ -37,18 +37,18 @@ operations.
 The usual way...
 
 ```
-$ go get github.com/Masterminds/structable
+$ go get github.com/jackson198608/structable
 ```
 
 And import it via:
 
 ```
-import "github.com/Masterminds/structable"
+import "github.com/jackson198608/structable"
 ```
 
 ## How To Use It
 
-[![GoDoc](https://godoc.org/github.com/Masterminds/structable?status.png)](https://godoc.org/github.com/Masterminds/structable)
+[![GoDoc](https://godoc.org/github.com/jackson198608/structable?status.png)](https://godoc.org/github.com/jackson198608/structable)
 
 Structable works by mapping a struct to columns in a database.
 

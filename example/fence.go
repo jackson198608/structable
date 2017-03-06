@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/Masterminds/squirrel"
-	"github.com/Masterminds/structable"
+	"github.com/jackson198608/squirrel"
+	"github.com/jackson198608/structable"
 )
 
 const FenceTable = "fences"

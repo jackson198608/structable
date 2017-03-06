@@ -37,8 +37,8 @@ The following example is taken from the `example/users.go` file.
 	package main
 
 	import (
-		"github.com/Masterminds/squirrel"
-		"github.com/Masterminds/structable"
+		"github.com/jackson198608/squirrel"
+		"github.com/jackson198608/structable"
 		_ "github.com/lib/pq"
 
 		"database/sql"
@@ -147,7 +147,7 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/Masterminds/squirrel"
+	"github.com/jackson198608/squirrel"
 )
 
 // 'stbl' is the main tag used for annotating Structable Records.
@@ -228,6 +228,7 @@ type Saver interface {
 	// Essentially, it does something like this:
 	// 	UPDATE bound_table SET every=?, field=?, but=?, keys=? WHERE primary_key=?
 	Update() error
+	ChangeBindTableName(string)
 
 	// Deletes a Record based on its PRIMARY_KEY(s).
 	Delete() error
@@ -586,6 +587,10 @@ func (s *DbRecorder) Update() error {
 	q := s.builder.Update(s.table).SetMap(updates).Where(whereParts)
 	_, err := q.Exec()
 	return err
+}
+
+func (s *DbRecorder) ChangeBindTableName(tableName string) {
+	s.table = tableName
 }
 
 // Columns returns the names of the columns on this table.

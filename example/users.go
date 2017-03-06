@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/Masterminds/squirrel"
-	"github.com/Masterminds/structable"
+	"github.com/jackson198608/squirrel"
+	"github.com/jackson198608/structable"
 	_ "github.com/lib/pq"
 
 	"database/sql"
@@ -70,7 +70,7 @@ func main() {
 	}
 	fmt.Printf("User by name has ID %d and email %s\n", again.Id, again.Email)
 
-	again.Email = "Masterminds@example.com"
+	again.Email = "jackson198608@example.com"
 	if err := again.Update(); err != nil {
 		panic(err.Error())
 	}

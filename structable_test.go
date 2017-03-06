@@ -8,7 +8,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/Masterminds/squirrel"
+	"github.com/jackson198608/squirrel"
 )
 
 type Stool struct {

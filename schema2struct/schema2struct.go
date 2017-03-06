@@ -8,7 +8,7 @@ import (
 	"strings"
 	"text/template"
 
-	"github.com/Masterminds/squirrel"
+	"github.com/jackson198608/squirrel"
 	"github.com/codegangsta/cli"
 
 	_ "github.com/lib/pq"
@@ -29,8 +29,8 @@ const fileHeader = `package %s
 import (
 	"time"
 
-	"github.com/Masterminds/squirrel"
-	"github.com/Masterminds/structable"
+	"github.com/jackson198608/squirrel"
+	"github.com/jackson198608/structable"
 	_ "github.com/lib/pq"
 )
 

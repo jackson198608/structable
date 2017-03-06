@@ -7,7 +7,7 @@ import (
 	"log"
 	"testing"
 
-	"github.com/Masterminds/squirrel"
+	"github.com/jackson198608/squirrel"
 	_ "github.com/mattn/go-sqlite3"
 )
 

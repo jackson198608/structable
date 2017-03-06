@@ -11,7 +11,7 @@ imports:
   version: 8df6253d1317616f36b0c3740eb30c239a7372cb
   subpackages:
   - oid
-- name: github.com/Masterminds/squirrel
+- name: github.com/jackson198608/squirrel
   version: 20f192218cf52a73397fa2df45bdda720f3e47c8
 - name: github.com/mattn/go-sqlite3
   version: 6f2749a3ca9b233ffb8749ef9684f7f4d88cee7a
